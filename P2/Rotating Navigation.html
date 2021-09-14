@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/P3/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Navigation</title>
+    <link rel="stylesheet" href="./Rotating Navigation_files/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Rotating Navigation_files/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="circle-container">
+            <div class="circle">
+                <button id="close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button id="open">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="content">
+            <h3>Article</h3>
+            <small>idkkkkkk</small>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Maiores sint libero error minima veniam? Exercitationem alias dicta 
+             facilis expedita veniam nobis inventore odio nostrum aliquam sapiente? 
+             Architecto placeat minus molestias reprehenderit quos veritatis, est 
+             nisi laborum vero voluptatibus molestiae ratione minima voluptatem rem labore? 
+             Quam consequatur eveniet dolores ab, unde illum deleniti iste dolorum, excepturi 
+             laudantium autem rem consequuntur explicabo nam alias reiciendis numquam dicta. 
+             Molestiae soluta praesentium sint corporis maiores quo, voluptas sequi voluptatibus 
+             in inventore nesciunt magnam explicabo laborum earum dignissimos suscipit 
+             asperiores sit minima natus. Accusantium ut omnis distinctio consectetur dolore 
+             voluptatum libero enim. Pariatur, accusantium voluptatibus?</p>
+             <h3>my catt</h3>
+             <img src="./Rotating Navigation_files/saved_resource" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsum eius sit quaerat provident culpa labore inventore quia facere perferendis quam, debitis delectus soluta, nostrum earum repudiandae eum? Dolorem temporibus hic perferendis accusamus, reprehenderit culpa, dolorum tenetur nulla natus saepe quam, consequatur nemo deserunt quas? Aliquid aliquam praesentium aperiam earum voluptatum similique, expedita quam reprehenderit repudiandae, aspernatur necessitatibus ratione. Quos cupiditate perferendis minima deserunt. Voluptatibus labore ex dignissimos exercitationem quaerat voluptates, nam omnis minus tempore!</p>
+            </div>
+    </div>
+    <nav>
+        <ul>
+            <li><i class="fas fa-home"></i>Home</li>
+            <li><i class="fas fa-user-alt"></i>About</li>
+            <li><i class="fas fa-envelope"></i>Contact</li>
+        </ul>
+    </nav>
+    <script src="./Rotating Navigation_files/script.js.download"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
